@@ -1,0 +1,64 @@
+.our-team {
+    background-color: getColor(secondary-bg);
+}
+.our-team__section-title {
+    margin-bottom: 50px;
+}
+.our-team__section-list {
+    display: flex;
+    justify-content: space-between;
+}
+.worker-card {
+    width: 270px;
+
+    background-color: getColor(primary-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.worker-card__card-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: getColor(title-text);
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.worker-card__card-descr {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+.card-social-links {
+    display: flex;
+    width: 206px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.card-social-links__link {
+    color: getColor(icon);
+
+    display: flex;
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    transition: background-color $transition-options, color $transition-options;
+    &:hover,
+    &:focus {
+        background-color: getColor(accent);
+        color: getColor(primary-white);
+    }
+}
+
+.card-social-links__icon {
+    fill: currentColor;
+    margin: auto;
+}

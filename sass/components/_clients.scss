@@ -1,0 +1,31 @@
+.clients__section-title {
+    margin-bottom: 50px;
+}
+.clients__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.clients__logo {
+    color: getColor(icon);
+
+    display: flex;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid getColor(icon);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    transition: border $transition-options, color $transition-options;
+    &:hover,
+    &:focus {
+        border: 1px solid getColor(accent);
+        color: getColor(accent);
+    }
+}
+.clients__icon {
+    fill: currentColor;
+}
