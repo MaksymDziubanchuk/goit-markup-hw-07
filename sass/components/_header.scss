@@ -3,12 +3,10 @@
     background-origin: border-box;
 }
 .header__container {
-    display: flex;
-    justify-content: space-between;
+    @include centeredFlex($content: space-between);
 }
 .nav {
-    display: flex;
-    align-items: center;
+    @include centeredFlex();
 }
 .nav__list {
     display: flex;

@@ -5,8 +5,7 @@
     margin-bottom: 50px;
 }
 .our-team__section-list {
-    display: flex;
-    justify-content: space-between;
+    @include centeredFlex($content: space-between);
 }
 .worker-card {
     width: 270px;
@@ -34,9 +33,9 @@
     margin-bottom: 30px;
 }
 .card-social-links {
-    display: flex;
+    @include centeredFlex($content: space-between);
     width: 206px;
-    justify-content: space-between;
+
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;

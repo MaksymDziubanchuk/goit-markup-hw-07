@@ -1,7 +1,6 @@
 /* Button block */
 .portfolio__btn-list {
-    display: flex;
-    justify-content: space-between;
+    @include centeredFlex($content: space-between);
     width: 611px;
     height: 54px;
     padding: 0;
@@ -30,10 +29,8 @@
 
 /* Cards block */
 .grid {
-    display: flex;
+    @include centeredFlex();
     flex-wrap: wrap;
-    justify-content: center;
-
     margin: -15px;
 }
 .grid__item {

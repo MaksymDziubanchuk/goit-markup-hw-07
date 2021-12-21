@@ -2,18 +2,14 @@
     margin-bottom: 50px;
 }
 .clients__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include centeredFlex($content: space-between);
 }
 .clients__logo {
     color: getColor(icon);
 
-    display: flex;
+    @include centeredFlex();
     width: 170px;
     height: 92px;
-    align-items: center;
-    justify-content: center;
 
     border: 1px solid getColor(icon);
     box-sizing: border-box;

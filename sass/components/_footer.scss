@@ -57,8 +57,7 @@
     margin-bottom: 20px;
 }
 .main-social-links__list {
-    display: flex;
-    justify-content: space-between;
+    @include centeredFlex($content: space-between);
 }
 .main-social-links__item {
     display: inline-block;
@@ -153,6 +152,7 @@
 }
 
 .subscription__btn-title {
+    font-size: 16px;
     line-height: 1.875;
     font-weight: 700;
     letter-spacing: 0.06em;
